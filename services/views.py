@@ -8,7 +8,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
 from services import models
-from services import serializer
+from services import serializers
 
 
 User = get_user_model()
@@ -19,7 +19,7 @@ class LoginView(APIView):
     permission_classes = []
 
     def post(self, request):
-        serializer = serializer.LoginSerializer(data=request.data)
+        serializer = serializers.LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         email = serializer.validated_data['email']
         password = serializer.validated_data['password']
@@ -49,34 +49,34 @@ class LoginView(APIView):
 
 class UserViewSet(ModelViewSet):
     queryset = User.objects.all()
-    serializer_class = serializer.UserSerializer
+    serializer_class = serializers.UserSerializer
 
 
 class ProfileViewSet(ModelViewSet):
     queryset = models.Profile.objects.all()
-    serializer_class = serializer.ProfileSerializer
+    serializer_class = serializers.ProfileSerializer
 
 
 class MenuItemViewSet(ModelViewSet):
     queryset = models.MenuItem.objects.all().order_by('category', 'name')
-    serializer_class = serializer.MenuItemSerializer
+    serializer_class = serializers.MenuItemSerializer
 
 
 class OrderViewSet(ModelViewSet):
     queryset = models.Order.objects.all().select_related('user').prefetch_related('items__product')
-    serializer_class = serializer.OrderSerializer
+    serializer_class = serializers.OrderSerializer
 
 
 class OrderItemViewSet(ModelViewSet):
     queryset = models.OrderItem.objects.select_related('order', 'product')
-    serializer_class = serializer.OrderItemSerializer
+    serializer_class = serializers.OrderItemSerializer
 
 
 class KitchenLogViewSet(ModelViewSet):
     queryset = models.KitchenLog.objects.select_related('order', 'order__user').all()
-    serializer_class = serializer.KitchenLogSerializer
+    serializer_class = serializers.KitchenLogSerializer
 
 
 class DeliveryLogViewSet(ModelViewSet):
     queryset = models.DeliveryLog.objects.select_related('order', 'delivery_person').all()
-    serializer_class = serializer.DeliveryLogSerializer
+    serializer_class = serializers.DeliveryLogSerializer

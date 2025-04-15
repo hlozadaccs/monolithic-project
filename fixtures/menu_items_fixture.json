@@ -1,0 +1,1102 @@
+[
+  {
+    "model": "services.menuitem",
+    "pk": 1,
+    "fields": {
+      "name": "Bruschetta clásica",
+      "description": "Ad eius dolore qui.",
+      "category": "APPETIZER",
+      "price": 4.07,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 2,
+    "fields": {
+      "name": "Ensalada caprese",
+      "description": "Assumenda in adipisci dolor magnam ad dicta.",
+      "category": "APPETIZER",
+      "price": 10.61,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 3,
+    "fields": {
+      "name": "Champiñones rellenos",
+      "description": "In ipsum eius sit quis cum in.",
+      "category": "APPETIZER",
+      "price": 7.96,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 4,
+    "fields": {
+      "name": "Pan de ajo",
+      "description": "Culpa vero excepturi at atque.",
+      "category": "APPETIZER",
+      "price": 7.93,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 5,
+    "fields": {
+      "name": "Alcachofas a la romana",
+      "description": "Nobis rem quas modi voluptate fugiat.",
+      "category": "APPETIZER",
+      "price": 9.71,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 6,
+    "fields": {
+      "name": "Aceitunas marinadas",
+      "description": "Eos occaecati suscipit facere deleniti architecto optio.",
+      "category": "APPETIZER",
+      "price": 4.64,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 7,
+    "fields": {
+      "name": "Carpaccio de ternera",
+      "description": "Voluptates sequi sint fugit iste.",
+      "category": "APPETIZER",
+      "price": 4.31,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 8,
+    "fields": {
+      "name": "Queso provolone al horno",
+      "description": "Cum explicabo pariatur praesentium placeat architecto.",
+      "category": "APPETIZER",
+      "price": 5.24,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 9,
+    "fields": {
+      "name": "Croquetas de parmesano",
+      "description": "Modi doloribus iure earum.",
+      "category": "APPETIZER",
+      "price": 11.35,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 10,
+    "fields": {
+      "name": "Arancini de arroz",
+      "description": "Dolor eveniet quisquam animi reprehenderit rem illo.",
+      "category": "APPETIZER",
+      "price": 4.55,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 11,
+    "fields": {
+      "name": "Pizza Margherita 30cm",
+      "description": "Distinctio velit soluta et.",
+      "category": "MAIN_COURSE",
+      "price": 12.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 12,
+    "fields": {
+      "name": "Pizza Margherita 60cm",
+      "description": "Id totam itaque eaque doloribus natus ea.",
+      "category": "MAIN_COURSE",
+      "price": 18.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 13,
+    "fields": {
+      "name": "Lasaña boloñesa",
+      "description": "Incidunt nesciunt facere voluptatum consequuntur laudantium quidem similique.",
+      "category": "MAIN_COURSE",
+      "price": 10.31,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 14,
+    "fields": {
+      "name": "Risotto de hongos",
+      "description": "Occaecati recusandae in aperiam.",
+      "category": "MAIN_COURSE",
+      "price": 14.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 15,
+    "fields": {
+      "name": "Fettuccine Alfredo",
+      "description": "Nisi iusto dolorum mollitia velit perspiciatis.",
+      "category": "MAIN_COURSE",
+      "price": 11.72,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 16,
+    "fields": {
+      "name": "Gnocchi al pesto",
+      "description": "Placeat modi eaque odit.",
+      "category": "MAIN_COURSE",
+      "price": 10.73,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 17,
+    "fields": {
+      "name": "Espaguetis carbonara",
+      "description": "Eos culpa a quam.",
+      "category": "MAIN_COURSE",
+      "price": 7.91,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 18,
+    "fields": {
+      "name": "Pizza Cuatro Quesos 30cm",
+      "description": "Voluptas quis magni autem numquam.",
+      "category": "MAIN_COURSE",
+      "price": 12.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 19,
+    "fields": {
+      "name": "Pizza Cuatro Quesos 60cm",
+      "description": "Non corrupti quis molestiae quod minus a.",
+      "category": "MAIN_COURSE",
+      "price": 18.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 20,
+    "fields": {
+      "name": "Pollo a la parmesana",
+      "description": "Laborum beatae facilis voluptates rem dolores.",
+      "category": "MAIN_COURSE",
+      "price": 14.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 21,
+    "fields": {
+      "name": "Tiramisú",
+      "description": "Soluta veniam assumenda laborum architecto.",
+      "category": "DESSERT",
+      "price": 8.67,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 22,
+    "fields": {
+      "name": "Panna Cotta",
+      "description": "Quisquam consectetur labore mollitia eaque sit incidunt.",
+      "category": "DESSERT",
+      "price": 6.4,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 23,
+    "fields": {
+      "name": "Cannoli",
+      "description": "Ut quidem porro quae id.",
+      "category": "DESSERT",
+      "price": 10.78,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 24,
+    "fields": {
+      "name": "Helado de vainilla",
+      "description": "Ipsa maxime commodi dolore excepturi nihil.",
+      "category": "DESSERT",
+      "price": 11.91,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 25,
+    "fields": {
+      "name": "Zabaglione",
+      "description": "Nihil ab provident animi architecto.",
+      "category": "DESSERT",
+      "price": 7.1,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 26,
+    "fields": {
+      "name": "Helado de pistacho",
+      "description": "Similique architecto dolores.",
+      "category": "DESSERT",
+      "price": 7.47,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 27,
+    "fields": {
+      "name": "Brownie italiano",
+      "description": "Distinctio consequatur vel necessitatibus labore quos rem.",
+      "category": "DESSERT",
+      "price": 9.17,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 28,
+    "fields": {
+      "name": "Pastel de ricotta",
+      "description": "Atque omnis explicabo illum sint.",
+      "category": "DESSERT",
+      "price": 5.66,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 29,
+    "fields": {
+      "name": "Frutas con mascarpone",
+      "description": "Perferendis voluptates atque.",
+      "category": "DESSERT",
+      "price": 4.72,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 30,
+    "fields": {
+      "name": "Crema catalana",
+      "description": "Quas reiciendis autem deleniti modi consequuntur.",
+      "category": "DESSERT",
+      "price": 10.8,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 31,
+    "fields": {
+      "name": "Crostata de frutas",
+      "description": "Eius dolorum unde ipsam.",
+      "category": "DESSERT",
+      "price": 6.17,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 32,
+    "fields": {
+      "name": "Bizcocho de almendra",
+      "description": "Atque officiis molestiae accusamus at quidem dolores.",
+      "category": "DESSERT",
+      "price": 11.4,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 33,
+    "fields": {
+      "name": "Gelato de chocolate",
+      "description": "Laborum distinctio id animi fugiat voluptates.",
+      "category": "DESSERT",
+      "price": 5.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 34,
+    "fields": {
+      "name": "Flan casero",
+      "description": "Unde quos eligendi possimus quas.",
+      "category": "DESSERT",
+      "price": 5.38,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 35,
+    "fields": {
+      "name": "Bombón helado",
+      "description": "Optio laborum deleniti dolor animi quasi aperiam.",
+      "category": "DESSERT",
+      "price": 10.74,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 36,
+    "fields": {
+      "name": "Semifreddo",
+      "description": "Animi nesciunt magnam sequi culpa vero.",
+      "category": "DESSERT",
+      "price": 11.51,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 37,
+    "fields": {
+      "name": "Tarta de queso",
+      "description": "Sed architecto architecto similique.",
+      "category": "DESSERT",
+      "price": 5.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 38,
+    "fields": {
+      "name": "Peras al vino",
+      "description": "Blanditiis tempora doloribus nisi nulla in.",
+      "category": "DESSERT",
+      "price": 10.33,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 39,
+    "fields": {
+      "name": "Profiteroles",
+      "description": "Natus et ea pariatur et eaque consectetur officia.",
+      "category": "DESSERT",
+      "price": 4.79,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 40,
+    "fields": {
+      "name": "Panettone",
+      "description": "Et quibusdam asperiores itaque voluptatum voluptatum asperiores.",
+      "category": "DESSERT",
+      "price": 10.08,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 41,
+    "fields": {
+      "name": "Zumo de naranja 250ml",
+      "description": "Magni consequatur expedita architecto doloribus.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 42,
+    "fields": {
+      "name": "Zumo de naranja 500ml",
+      "description": "Culpa rerum provident nostrum voluptates.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 43,
+    "fields": {
+      "name": "Zumo de piña 250ml",
+      "description": "Ab repellendus error optio vel consequatur blanditiis.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 44,
+    "fields": {
+      "name": "Zumo de piña 500ml",
+      "description": "Quia culpa eligendi distinctio.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 45,
+    "fields": {
+      "name": "Zumo de manzana 250ml",
+      "description": "Dignissimos odio eaque laborum temporibus sapiente.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 46,
+    "fields": {
+      "name": "Zumo de manzana 500ml",
+      "description": "Odio repudiandae aliquid ex.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 47,
+    "fields": {
+      "name": "Zumo de fresa 250ml",
+      "description": "Odio ea qui mollitia.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 48,
+    "fields": {
+      "name": "Zumo de fresa 500ml",
+      "description": "Natus beatae velit porro corrupti alias.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 49,
+    "fields": {
+      "name": "Zumo de mango 250ml",
+      "description": "Nesciunt corporis consectetur est tempore recusandae.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 50,
+    "fields": {
+      "name": "Zumo de mango 500ml",
+      "description": "Tempore distinctio dolorum.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 51,
+    "fields": {
+      "name": "Zumo de zanahoria 250ml",
+      "description": "Explicabo nam soluta voluptate.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 52,
+    "fields": {
+      "name": "Zumo de zanahoria 500ml",
+      "description": "Unde dolores cum reiciendis.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 53,
+    "fields": {
+      "name": "Zumo verde 250ml",
+      "description": "Sunt ad qui ex.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 54,
+    "fields": {
+      "name": "Zumo verde 500ml",
+      "description": "Rem sint repellat eaque ratione autem.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 55,
+    "fields": {
+      "name": "Zumo detox 250ml",
+      "description": "Similique dolore repellendus.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 56,
+    "fields": {
+      "name": "Zumo detox 500ml",
+      "description": "Expedita reprehenderit sit dolore optio id eius.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 57,
+    "fields": {
+      "name": "Zumo de arándanos 250ml",
+      "description": "Vitae eius odit id.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 58,
+    "fields": {
+      "name": "Zumo de arándanos 500ml",
+      "description": "Ex adipisci soluta ea neque voluptates alias.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 59,
+    "fields": {
+      "name": "Zumo de tomate 250ml",
+      "description": "Ipsa quas et non maiores harum nemo ducimus.",
+      "category": "JUICE",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 60,
+    "fields": {
+      "name": "Zumo de tomate 500ml",
+      "description": "A unde modi quaerat quia perferendis.",
+      "category": "JUICE",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 61,
+    "fields": {
+      "name": "Coca-Cola 250ml",
+      "description": "Inventore veniam ullam numquam optio commodi.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 62,
+    "fields": {
+      "name": "Coca-Cola 500ml",
+      "description": "Magni pariatur eveniet possimus mollitia.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 63,
+    "fields": {
+      "name": "Sprite 250ml",
+      "description": "In velit perspiciatis temporibus nulla.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 64,
+    "fields": {
+      "name": "Sprite 500ml",
+      "description": "Illo rerum esse distinctio ratione.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 65,
+    "fields": {
+      "name": "Fanta naranja 250ml",
+      "description": "Omnis iure ipsam distinctio labore temporibus recusandae cumque.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 66,
+    "fields": {
+      "name": "Fanta naranja 500ml",
+      "description": "Eligendi optio nulla at.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 67,
+    "fields": {
+      "name": "Agua con gas 250ml",
+      "description": "Perferendis dolore dicta ad doloribus.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 68,
+    "fields": {
+      "name": "Agua con gas 500ml",
+      "description": "Nostrum quisquam iste suscipit nemo quaerat fugit.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 69,
+    "fields": {
+      "name": "Tónica 250ml",
+      "description": "Doloribus omnis ab quibusdam quo autem.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 70,
+    "fields": {
+      "name": "Tónica 500ml",
+      "description": "Dolor rem possimus iure nam totam.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 71,
+    "fields": {
+      "name": "Agua natural 250ml",
+      "description": "Itaque reiciendis pariatur voluptates.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 72,
+    "fields": {
+      "name": "Agua natural 500ml",
+      "description": "Et quidem ipsam repellendus tempora incidunt tenetur ipsum.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 73,
+    "fields": {
+      "name": "Soda italiana limón 250ml",
+      "description": "Quia labore ea doloribus.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 74,
+    "fields": {
+      "name": "Soda italiana limón 500ml",
+      "description": "Quisquam maxime occaecati earum aspernatur.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 75,
+    "fields": {
+      "name": "Bebida de jengibre 250ml",
+      "description": "Doloremque excepturi tempora aspernatur corrupti.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 76,
+    "fields": {
+      "name": "Bebida de jengibre 500ml",
+      "description": "Possimus provident aperiam illum molestiae impedit.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 77,
+    "fields": {
+      "name": "Refresco de maracuyá 250ml",
+      "description": "Rerum harum quo veniam accusantium.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 78,
+    "fields": {
+      "name": "Refresco de maracuyá 500ml",
+      "description": "Fugit ab explicabo quidem sequi veritatis in.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 79,
+    "fields": {
+      "name": "Soda de cereza 250ml",
+      "description": "Reiciendis tempore laborum earum laborum harum pariatur.",
+      "category": "SOFT_DRINK",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 80,
+    "fields": {
+      "name": "Soda de cereza 500ml",
+      "description": "Quam saepe ullam voluptatem modi tenetur.",
+      "category": "SOFT_DRINK",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 81,
+    "fields": {
+      "name": "Vino Chianti copa",
+      "description": "Natus ad odit consequatur iure amet fugiat distinctio.",
+      "category": "ALCOHOL",
+      "price": 7.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 82,
+    "fields": {
+      "name": "Vino Chianti botella",
+      "description": "Excepturi sunt eius veritatis in rerum.",
+      "category": "ALCOHOL",
+      "price": 20.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 83,
+    "fields": {
+      "name": "Prosecco copa",
+      "description": "Accusantium molestiae voluptatum expedita officiis quos officiis.",
+      "category": "ALCOHOL",
+      "price": 7.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 84,
+    "fields": {
+      "name": "Prosecco botella",
+      "description": "Veniam dicta accusantium.",
+      "category": "ALCOHOL",
+      "price": 20.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 85,
+    "fields": {
+      "name": "Campari 200ml",
+      "description": "Dolores labore beatae veniam.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 86,
+    "fields": {
+      "name": "Campari 500ml",
+      "description": "Praesentium quisquam cumque non quibusdam beatae reprehenderit.",
+      "category": "ALCOHOL",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 87,
+    "fields": {
+      "name": "Aperol Spritz copa",
+      "description": "Autem ad est perspiciatis vero.",
+      "category": "ALCOHOL",
+      "price": 7.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 88,
+    "fields": {
+      "name": "Aperol botella",
+      "description": "Velit dicta nihil rerum doloribus possimus.",
+      "category": "ALCOHOL",
+      "price": 20.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 89,
+    "fields": {
+      "name": "Limoncello 100ml",
+      "description": "Sed nobis commodi voluptates quos.",
+      "category": "ALCOHOL",
+      "price": 2.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 90,
+    "fields": {
+      "name": "Limoncello 250ml",
+      "description": "Minus optio architecto officia accusamus in.",
+      "category": "ALCOHOL",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 91,
+    "fields": {
+      "name": "Grappa 100ml",
+      "description": "Autem vero odio repudiandae provident ipsa quasi.",
+      "category": "ALCOHOL",
+      "price": 2.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 92,
+    "fields": {
+      "name": "Grappa 250ml",
+      "description": "Nulla ullam quo iure repudiandae.",
+      "category": "ALCOHOL",
+      "price": 3.0,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 93,
+    "fields": {
+      "name": "Cerveza Peroni 330ml",
+      "description": "Eaque sequi rerum assumenda sunt doloribus iure nostrum.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 94,
+    "fields": {
+      "name": "Cerveza Peroni 500ml",
+      "description": "Excepturi laudantium eveniet laborum explicabo ea.",
+      "category": "ALCOHOL",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 95,
+    "fields": {
+      "name": "Cerveza Moretti 330ml",
+      "description": "Sunt praesentium eius ab veniam.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 96,
+    "fields": {
+      "name": "Cerveza Moretti 500ml",
+      "description": "Dolores illo nam dolores.",
+      "category": "ALCOHOL",
+      "price": 4.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 97,
+    "fields": {
+      "name": "Vermouth rojo 200ml",
+      "description": "Officia laudantium recusandae at dolore porro esse.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 98,
+    "fields": {
+      "name": "Vermouth blanco 200ml",
+      "description": "Fuga mollitia exercitationem voluptatum mollitia explicabo iste esse.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 99,
+    "fields": {
+      "name": "Negroni preparado 200ml",
+      "description": "Blanditiis deserunt blanditiis modi quis.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  },
+  {
+    "model": "services.menuitem",
+    "pk": 100,
+    "fields": {
+      "name": "Amaretto 200ml",
+      "description": "Deleniti qui eius nihil.",
+      "category": "ALCOHOL",
+      "price": 3.5,
+      "available": true
+    }
+  }
+]
