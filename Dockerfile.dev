@@ -1,0 +1,27 @@
+# Dockerfile.dev
+FROM python:3.11-slim
+
+# Variables de entorno
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Instala herramientas necesarias
+RUN apt-get update && apt-get install -y netcat-openbsd libpq-dev gcc && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Establece el directorio de trabajo
+WORKDIR /app
+
+# Copia e instala dependencias
+COPY requirements.txt .
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+# Copia todo el código
+COPY . .
+
+# Expone puerto para Django
+EXPOSE 8000
+
+# Comando por defecto usando wait-for-postgres.sh
+CMD ["./wait-for-postgres.sh", "python", "manage.py", "runserver", "0.0.0.0:8000"]

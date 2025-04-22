@@ -1,0 +1,31 @@
+# Dockerfile
+FROM python:3.11-slim
+
+# Variables de entorno
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Instala herramientas necesarias
+RUN apt-get update && apt-get install -y netcat-openbsd libpq-dev gcc && \
+    pip install --upgrade pip && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Establece directorio de trabajo
+WORKDIR /app
+
+# Copia requerimientos e instala
+COPY requirements.txt .
+RUN pip install -r requirements.txt && pip install gunicorn
+
+# Copia todo el proyecto
+COPY . .
+
+# Copia entrypoint y permisos
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+# Usa entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
+
+# Expone puerto para Gunicorn
+EXPOSE 8000
