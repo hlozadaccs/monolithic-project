@@ -2,11 +2,14 @@
 
 set -e  # Finaliza si algún comando falla
 
-echo "🔄 Esperando a que PostgreSQL esté disponible en $POSTGRES_HOST:$POSTGRES_PORT..."
+echo "🔄 Esperando a que PostgreSQL esté disponible en $DATABASE_HOST:$DATABASE_PORT..."
 
 # Espera hasta que el puerto de Postgres esté disponible
-while ! nc -z $POSTGRES_HOST $POSTGRES_PORT; do
-  sleep 0.5
+
+until nc -z -v -w30 $DATABASE_HOST $DATABASE_PORT
+do
+  echo "PostgreSQL no disponible, reintentando en 1 segundo..."
+  sleep 1
 done
 
 echo "✅ PostgreSQL está listo."

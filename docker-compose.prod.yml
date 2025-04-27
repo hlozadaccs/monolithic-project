@@ -1,5 +1,5 @@
 services:
-  web:
+  api:
     build: .
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
     ports:
@@ -19,4 +19,4 @@ services:
       - pgdata:/var/lib/postgresql/data
 
 volumes:
-  pgdata:
+  postgres_data:

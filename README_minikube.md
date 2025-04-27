@@ -1,82 +1,194 @@
-# 🚀 Despliegue de Django en Minikube con Kubernetes
+# 🌍 Despliegue de proyecto Monolítico en Minikube
 
-Este manual describe cómo desplegar una aplicación Django en Minikube usando manifiestos de Kubernetes y recursos como Deployment, Service, Ingress, Secret y ConfigMap.
+Este proyecto permite desplegar una aplicación Django en Minikube usando Gunicorn, PostgreSQL externo y Nginx Ingress.
 
----
+## 🔧 Requisitos previos
 
-## 📦 Pre-requisitos
+- Docker instalado
+- Minikube instalado y en ejecución
+- kubectl configurado para Minikube
 
-- Docker
-- Minikube
-- kubectl
-- Proyecto Django con Dockerfile.prod
 
----
-
-## 🧰 Pasos para el despliegue local
+## ✅ Preparación del entorno
 
 ### 1. Iniciar Minikube
+```bash
+minikube start
+eval $(minikube docker-env)
+```
+
+### 2. Construir la imagen Docker
+```bash
+docker build -f Dockerfile.prod -t django-app:prod .
+```
+
+## ✨ Configuración de Kubernetes
+
+### 3. Crear el Secret para variables de entorno
+
+Antes de crear el secret, asegúrate que `.env.prod` esté correctamente configurado.
 
 ```bash
-minikube start --driver=docker
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+kubectl apply -f django-secret.yaml
+kubectl get secrets
+kubectl describe secret django-secret
+kubectl delete secret django-secret  # Opcional
+```
+
+### 4. Desplegar los manifiestos Kubernetes
+
+Aplicar los archivos de despliegue y servicio:
+
+```bash
+kubectl apply -f django-deployment.yaml
+kubectl apply -f django-service.yaml
+```
+
+
+### 5. (Opcional) Habilitar y configurar Ingress
+
+Habilitar el addon Ingress en Minikube:
+
+```bash
 minikube addons enable ingress
 ```
 
-### 2. Usar el entorno Docker de Minikube
+Aplicar el manifiesto de Ingress:
+
+```bash
+kubectl apply -f django-ingress.yaml
+```
+
+Editar el archivo `/etc/hosts` agregando la IP de Minikube:
+
+```bash
+echo "$(minikube ip) django.local" | sudo tee -a /etc/hosts
+```
+
+
+## 📅 Reinicio del deployment
+
+Cada vez que modifiques `Dockerfile.prod`, `entrypoint.sh`, o `requirements.txt`, reconstruye la imagen y reinicia el deployment:
+
+```bash
+eval $(minikube docker-env)
+docker build -f Dockerfile.prod -t django-app:prod .
+kubectl rollout restart deployment django-app
+```
+
+
+## 🌍 Acceso a la aplicación
+
+- **Sin Ingress:**
+
+Accede directamente usando el puerto del NodePort:
+
+```bash
+http://$(minikube ip):30080
+```
+
+- **Con Ingress:**
+
+Accede usando la URL amigable:
+
+```bash
+http://django.local
+```
+
+
+## 📚 Archivos relevantes
+
+- `Dockerfile.prod`
+- `docker-compose.prod.yml`
+- `entrypoint.sh`
+- `django-deployment.yaml`
+- `django-service.yaml`
+- `django-ingress.yaml`
+- `secret.yaml`
+
+
+## 💚 Notas adicionales
+
+- Los archivos estáticos (`static/`) deben ser recopilados mediante `collectstatic` y están expuestos por Django temporalmente en desarrollo.
+- La conexión a PostgreSQL usa `host.minikube.internal` para apuntar al contenedor externo.
+
+
+---
+
+🚀 Proyecto listo para evolucionar a entornos de nube como AWS EKS o GCP GKE.
+
+# 🔧 Limpieza Completa de Minikube
+
+Este procedimiento elimina todos los recursos desplegados en Minikube, incluyendo deployments, services, ingress, secrets y datos persistentes.
+
+---
+
+## ❌ Detener y eliminar el cluster actual
+
+```bash
+minikube stop
+minikube delete --all
+```
+
+Esto detiene Minikube y elimina todas las configuraciones del cluster.
+
+---
+
+## 📂 Eliminar configuraciones locales
+
+Borrar configuraciones y cachés relacionados en tu equipo:
+
+```bash
+rm -rf ~/.minikube
+rm -rf ~/.kube
+```
+
+> **Nota:** Si usas otros clusters (por ejemplo, en la nube), elimina con cuidado solo el contexto de Minikube.
+
+---
+
+## 🌐 Limpieza opcional de Docker
+
+Si quieres limpiar las imágenes que construiste dentro del entorno de Docker:
+
+1. Conectar al demonio de Docker de Minikube:
 
 ```bash
 eval $(minikube docker-env)
 ```
 
-### 3. Construir la imagen Docker
+2. Ver las imágenes:
 
 ```bash
-docker build -t my-app:latest .
+docker images
 ```
 
-### 4. Aplicar los manifiestos de Kubernetes
+3. Eliminar imágenes específicas (opcional):
 
 ```bash
-kubectl apply -f secret.yaml
-kubectl apply -f configmap.yaml
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-kubectl apply -f ingress.yaml
+docker rmi <nombre_imagen>
 ```
-
-### 5. Verificar que el pod esté corriendo
-
-```bash
-kubectl get pods
-```
-
-### 6. Exponer el Ingress localmente
-
-```bash
-minikube tunnel
-kubectl get ingress
-```
-
-Accede en el navegador a la IP listada o a `http://localhost` si configuraste hosts.
 
 ---
 
-## 📄 Archivos incluidos
+## 🌍 Restablecer el /etc/hosts
 
-- `deployment.yaml` – Define el despliegue de la app
-- `service.yaml` – Expone el pod dentro del clúster
-- `ingress.yaml` – Expone la app externamente vía HTTP
-- `secret.yaml` – Variables sensibles (como claves o contraseñas)
-- `configmap.yaml` – Configuración no sensible como entorno o flags
-- `deploy_minikube.sh` – Script para automatizar todo el flujo
+Si agregaste entradas en `/etc/hosts` como `django.local`, recuerda eliminarlas manualmente si ya no son necesarias:
 
----
+```bash
+sudo nano /etc/hosts
+```
 
-## ✅ Recomendaciones
+Buscar y eliminar líneas como:
 
-- Usa `kubectl describe pod <nombre>` si algo falla
-- Usa `kubectl logs <nombre>` para ver los logs
-- Asegúrate de que Minikube tenga recursos suficientes (`minikube config set memory 4096`)
+```
+192.168.49.2 django.local
+```
 
 ---
+
+# 🔄 Minikube completamente limpio y listo para reiniciar desde cero.
+
+🚀 Ahora puedes ejecutar `minikube start` para comenzar un nuevo ambiente limpio.
 
