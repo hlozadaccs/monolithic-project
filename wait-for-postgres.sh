@@ -2,10 +2,10 @@
 
 set -e  # Salir si hay error
 
-echo "🔄 Esperando a que PostgreSQL esté disponible en $POSTGRES_HOST:$POSTGRES_PORT..."
+echo "🔄 Esperando a que PostgreSQL esté disponible en $DATABASE_HOST:$DATABASE_PORT..."
 
 # Espera hasta que PostgreSQL esté listo
-while ! nc -z $POSTGRES_HOST $POSTGRES_PORT; do
+while ! nc -z $DATABASE_HOST $DATABASE_PORT; do
   sleep 0.5
 done
 
