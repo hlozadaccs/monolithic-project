@@ -13,11 +13,17 @@ class UserSerializer(serializers.ModelSerializer):
         write_only=True,
         style={"input_type": "password"},
     )
+    display_role = serializers.SerializerMethodField()
 
     class Meta:
         model = models.User
-        fields = ["id", "email", "password", "role"]
+        fields = ["id", "email", "password", "display_role"]
         extra_kwargs = {"password": {"write_only": True}}
+
+    def get_display_role(self, obj):
+        if obj.is_superuser:
+            return "ADMIN"
+        return obj.role
 
     def create(self, validated_data):
         password = validated_data.pop("password", None)
