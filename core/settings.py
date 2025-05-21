@@ -38,7 +38,10 @@ ALLOWED_HOSTS = ["*"]
 
 LOCAL_APPS = ["services"]
 
-THIRD_PARTY_INSTALLED_APPS = ["rest_framework", "rest_framework.authtoken"]
+THIRD_PARTY_INSTALLED_APPS = [
+    "rest_framework",
+    "rest_framework_simplejwt",
+]
 
 INSTALLED_APPS = (
     [
